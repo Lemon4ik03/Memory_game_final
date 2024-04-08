@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    tools:context=".Choose_mode">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="408dp"
+        android:layout_height="433dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/choose_game_mode"
+            android:layout_width="410dp"
+            android:layout_height="430dp"
+            android:text="Choose game mode"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="52dp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_pvp"
+        android:layout_width="130dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_pvc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_pvc"
+        android:layout_width="130dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_pvp" />
+
+    <TextView
+        android:id="@+id/pvp"
+        android:layout_width="118dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="PvP"
+        android:textColor="@color/black"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_pvp"
+        app:layout_constraintEnd_toEndOf="@+id/button_pvp"
+        app:layout_constraintStart_toStartOf="@+id/button_pvp"
+        app:layout_constraintTop_toTopOf="@+id/button_pvp" />
+
+    <TextView
+        android:id="@+id/pvc"
+        android:layout_width="118dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="PvC"
+        android:textColor="@color/black"
+        android:textSize="46dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_pvc"
+        app:layout_constraintEnd_toEndOf="@+id/button_pvc"
+        app:layout_constraintStart_toStartOf="@+id/button_pvc"
+        app:layout_constraintTop_toTopOf="@+id/button_pvc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="408dp"
+    android:layout_height="433dp"
+    tools:context=".Input_names">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:name="com.example.memory_game.Input_names"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/white"
+        android:translationY="95dp" />
+
+    <Button
+        android:id="@+id/starts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:translationX="150dp"
+        android:translationY="370dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 -"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        android:translationX="10dp"
+        android:translationY="105dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/playerOne"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:translationX="225dp"
+        android:translationY="110dp"
+        android:typeface="serif"
+        android:textSize="36dp"/>
+
+
+
+</FrameLayout>
